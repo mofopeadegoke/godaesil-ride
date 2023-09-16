@@ -69,8 +69,8 @@ marquee {
 }
 .featuresSection .content {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: auto auto; 
     gap: 6rem;
 }
 .cardArticle {
@@ -212,4 +212,7 @@ marquee {
 .contact label span {
     display: block;
     margin-bottom: 0.5rem;
+}
+.mobile {
+    display: none;
 }

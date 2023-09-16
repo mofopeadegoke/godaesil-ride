@@ -1,6 +1,9 @@
 :root {
     --primary-color: #FFA500;
 }
+body {
+    position: relative;
+}
 a {
     color: var(--primary-color);
     text-decoration: none;
@@ -9,9 +12,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 2.81rem 7.06rem;
 }
-
+nav > img {
+    padding-top: 10px;
+}
 nav  .navbarLogoArticle {
     display: flex;
     flex-direction: row;
@@ -24,31 +30,86 @@ nav .navbarLogoArticle img {
 nav .navbarLogoArticle p {
     font-size: 28px;
 }
-nav .navbarSecondPart {
+.navbarSecondPart .links{
     display: flex;
     align-items: center;
 }
-nav .navbarSecondPart > a {
+.navbarSecondPart > a {
     margin-right: 2rem;
 }
+.hide {
+    display: none;
+}
 @media all and (max-width: 900px) {
-    nav, nav .navbarSecondPart {
-        flex-direction: column;
-    }
     nav {
+        flex-direction: row;
         padding: 2rem 1.5rem;
     }
-    nav .navbarSecondPart {
-        text-align: left;
-        align-items: flex-start;
+    nav > img {
+        padding-top: 5px;
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        margin-block: auto;
     }
-    nav .navbarSecondPart>a {
+    .navbarSecondPart .links {
+        position: absolute;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-65%, -50%);
+        row-gap: 2rem;
+    }
+    .navbarSecondPart .links a {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .navbarSecondPart .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 1.5rem;
+    }
+    .navbarSecondPart .header > img {
+        padding-top: 5px;
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        margin-block: auto;
+    }
+    .navbarSecondPart .navbarLogoArticle {
+        display: flex;
+        flex-direction: row;
+        height: 3rem;
+        align-items: center;
+    } 
+    .navbarSecondPart .navbarLogoArticle p {
+        font-size: 28px;
+        color: #fff;
+    }
+    .navbarSecondPart .navbarLogoArticle img {
+        max-height: 100%;
+        fill: #fff;
+    }
+    .navbarSecondPart>a {
         margin-right: 0;
         margin-bottom: 1rem;
     }
     nav .navbarLogoArticle {
         margin-bottom: 0.5rem;
     }
-
-
+    .navbarSecondPart {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999999;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    .mobileHide {
+        display: none;
+    }
 }

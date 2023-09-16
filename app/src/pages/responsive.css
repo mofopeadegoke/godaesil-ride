@@ -36,7 +36,7 @@
         padding: 2rem 1.5rem;
     }
     .featuresSection .content {
-        grid-template-columns: auto auto;
+        grid-template-columns: 20rem 20rem;
         grid-template-rows: auto auto auto;
         gap: 1rem;
     }
@@ -47,17 +47,35 @@
         margin-inline: 1.5rem;
         margin-bottom: 2rem;
         padding: 2rem 1.5rem;
+        text-align: center;
+    }
+    .trackDeliverySection,
+    .inAppMessage {
+        flex-direction: column;
+    }
+    .trustedDelivery,
+    .getEstimate {
+        flex-direction: column-reverse;
+    }
+    .trackDeliverySection img,
+    .inAppMessage img {
+        margin-bottom: 1rem;
+    }
+
+    .trustedDelivery img,
+    .getEstimate img {
+        margin-top: 1rem;
     }
     .trackDeliverySection img,
     .inAppMessage img,
     .trustedDelivery img,
     .getEstimate img {
         height: 300px;
-        margin-right: 1rem;
+        margin-right: 0;
     }
     .trustedDelivery .text,
     .getEstimate .text {
-        margin-left: 1rem;
+        margin-left: 0;
     }
     .contact {
         padding: 2rem 1.5rem;
@@ -69,10 +87,20 @@
     .contact button {
         width: 100%;
     }
+    .trackDeliverySection .text p:nth-child(2),
+    .inAppMessage .text p:nth-child(2),
+    .trustedDelivery .text p:nth-child(2),
+    .getEstimate .text p:nth-child(2) {
+        width: 100%;
+    }
+    .mobile {
+        display: inline-flex;
+    }
 }
 @media all and (max-width: 670px) {
     .featuresSection .content {
-        grid-template-columns: auto;
+        grid-template-columns: 20rem;
+        justify-content: center;
         grid-template-rows: auto auto auto auto auto;
         gap: 1rem;
     }
@@ -81,7 +109,6 @@
     .trustedDelivery img,
     .getEstimate img {
         height: 200px;
-        margin-right: 0.5rem;
         vertical-align: middle;
     }
 }
