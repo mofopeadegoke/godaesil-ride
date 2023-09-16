@@ -29,7 +29,6 @@ import { Link } from "react-router-dom";
 //     // }
 //   };
 // }
-
 export default function Navbar() {
   return (
     <nav>
@@ -38,10 +37,12 @@ export default function Navbar() {
         <img src={LocationIcon} alt="A map marker" />
       </Link>
       <article className="navbarSecondPart">
-        <Link to="#">About Us</Link>
-        <Link to="#">Features</Link>
-        <Link to="#">Privacy</Link>
-        <Button value="Join Waitlist"></Button>
+        <a href="#about">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">
+          <Button value="Join Waitlist"></Button>
+        </a>
       </article>
     </nav>
   );
