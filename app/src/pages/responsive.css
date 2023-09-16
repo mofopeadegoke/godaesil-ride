@@ -76,4 +76,12 @@
         grid-template-rows: auto auto auto auto auto;
         gap: 1rem;
     }
+    .trackDeliverySection img,
+    .inAppMessage img,
+    .trustedDelivery img,
+    .getEstimate img {
+        height: 200px;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+    }
 }
