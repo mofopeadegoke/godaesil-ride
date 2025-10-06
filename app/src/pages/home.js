@@ -20,7 +20,7 @@ import { useEffect } from "react";
 function IntroSection() {
   return (
     <>
-      <article className="introSection" id="about">
+      <section className="introSection" id="about">
         <article className="text">
           <h1>Delivery made Easier, Better and Faster</h1>
           <p>
@@ -44,7 +44,7 @@ function IntroSection() {
             alt="The Godaesil-ride's logo on a yellow rectangular background"
           />
         </article>
-      </article>
+      </section>
       <marquee direction="right">
         Coming Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon
         &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming
@@ -60,7 +60,7 @@ function IntroSection() {
 function FeaturesSection() {
   return (
     <>
-      <article className="featuresSection" id="features">
+      <section className="featuresSection" id="features">
         <h2>
           <span className="orangeTxt">Fe</span>atures
         </h2>
@@ -96,7 +96,7 @@ function FeaturesSection() {
             text="With Godaesil Ride, you can track your deliveries in real-time."
           />
         </article>
-      </article>
+      </section>
     </>
   );
 }
@@ -104,7 +104,7 @@ function FeaturesSection() {
 function TrackDelivery() {
   return (
     <>
-      <article className="trackDeliverySection">
+      <section className="trackDeliverySection">
         <img src={trackDeliveryIcon} alt="An Iphone 14 on google maps" />
         <article className="text">
           <p className="title">Track Deliveries in Real-time</p>
@@ -114,7 +114,7 @@ function TrackDelivery() {
             experience.
           </p>
         </article>
-      </article>
+      </section>
     </>
   );
 }
@@ -122,7 +122,7 @@ function TrackDelivery() {
 function TrustedDelivery() {
   return (
     <>
-      <article className="trustedDelivery">
+      <section className="trustedDelivery">
         <img
           src={trustedDeliveryImg}
           alt="An Iphone 14 on google maps about to give a rating"
@@ -135,7 +135,7 @@ function TrustedDelivery() {
             hands.
           </p>
         </article>
-      </article>
+      </section>
     </>
   );
 }
@@ -143,7 +143,7 @@ function TrustedDelivery() {
 function InAppMessage() {
   return (
     <>
-      <article className="inAppMessage">
+      <section className="inAppMessage">
         <img src={inAppMessageImg} alt="An Iphone 14 on a messaging platform" />
         <article className="text">
           <p className="title">In-App Message With Image Sharing</p>
@@ -153,7 +153,7 @@ function InAppMessage() {
             efficient delivery experience.
           </p>
         </article>
-      </article>
+      </section>
     </>
   );
 }
@@ -161,7 +161,7 @@ function InAppMessage() {
 function GetEstimate() {
   return (
     <>
-      <article className="getEstimate">
+      <section className="getEstimate">
         <img
           src={getEstimateImg}
           alt="An Iphone 14 on the package details page of the app"
@@ -173,7 +173,7 @@ function GetEstimate() {
             estimate tool.
           </p>
         </article>
-      </article>
+      </section>
     </>
   );
 }
@@ -181,7 +181,7 @@ function GetEstimate() {
 function ContactSection() {
   return (
     <>
-      <article className="contact" id="contact">
+      <section className="contact" id="contact">
         <p>Subscribe to get update when our app drops</p>
         <p>
           We'll send you an update notification for you to know we are now live
@@ -198,7 +198,7 @@ function ContactSection() {
             <button>Join Waitlist</button>
           </label>
         </form>
-      </article>
+      </section>
     </>
   );
 }
@@ -206,9 +206,9 @@ function ContactSection() {
 function Footer() {
   return (
     <>
-      <article className="footer" id="privacy">
+      <footer className="footer" id="privacy">
         <p>&copy;2023 Godaesil All Rights Reserved</p>
-      </article>
+      </footer>
     </>
   );
 }
