@@ -3,7 +3,6 @@ import burger from "../assets/burger.svg";
 import Button from "./button.js";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 // Function that handles the responsive navbar hamburger
 function navBurger() {
   const navHideEls = document.querySelector(".navbarSecondPart");
