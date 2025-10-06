@@ -4,7 +4,7 @@ export default function InAppMessage() {
     return (
         <>
           <section className="inAppMessage">
-            <img src={inAppMessageImg} alt="An Iphone 14 on a messaging platform" />
+            <img src={inAppMessageImg} alt="An Iphone showing the Godeasil app with user using the in app messaging feature in the app" />
             <article className="text">
               <p className="title">In-App Message With Image Sharing</p>
               <p>

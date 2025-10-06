@@ -22,19 +22,19 @@ export default function FeaturesSection() {
               />
               <Card
                 imgUrl={packageIcon}
-                imgAltText="Package icon"
+                imgAltText="A box representing the package icon"
                 title="Deliver a Package"
                 text="Deliver your packages from anywhere."
               />
               <Card
                 imgUrl={messageIcon}
-                imgAltText="Messages icon"
+                imgAltText="The Messages icon"
                 title="In-app Message"
                 text="Chat with your courier to be constantly updated."
               />
               <Card
                 imgUrl={customerServiceIcon}
-                imgAltText="Customer service icon"
+                imgAltText="Headsets representing the customer care icon"
                 title="Customer Care"
                 text="Get in touch with the customer care service representative."
               />

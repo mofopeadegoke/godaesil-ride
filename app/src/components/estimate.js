@@ -6,7 +6,7 @@ export default function GetEstimate() {
       <section className="getEstimate">
         <img
           src={getEstimateImg}
-          alt="An Iphone 14 on the package details page of the app"
+          alt="An Iphone showing the Godeasil app on the screen with the user viewing details of a package"
         />
         <article className="text">
           <p className="title">Get Estimate </p>

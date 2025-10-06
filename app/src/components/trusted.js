@@ -6,7 +6,7 @@ export default function TrustedDelivery() {
           <section className="trustedDelivery">
             <img
               src={trustedDeliveryImg}
-              alt="An Iphone 14 on google maps about to give a rating"
+              alt="An Iphone with the Godeasil app showing on the screen and the user about to give a courier a rating"
             />
             <article className="text">
               <p className="title">Trusted Delivery Services</p>

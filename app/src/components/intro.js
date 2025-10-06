@@ -12,10 +12,10 @@ export default function IntroSection() {
                 We pride ourselves on delivering excellence every mile. With our
                 intuitive app, managing shipments and tracking deliveries.
               </p>
-              <a href="#contact">
+              <a href="#contact" aria-label="Button to book a demo of the Godeasil app">
                 <Button value="Book Demo" />
               </a>
-              <a href="#contact">
+              <a href="#contact" aria-label="Button to join the waitlist to use the Godeasil app">
                 <Button value="Join Waitlist" />
               </a>
             </article>

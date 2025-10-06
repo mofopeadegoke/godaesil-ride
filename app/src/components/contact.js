@@ -14,6 +14,7 @@ export default function ContactSection() {
               placeholder="eg email@example.com"
               name="Email"
               required
+              aria-label="Input element where users of the website put in their email to join the waitlist for the Godeasil app"
             />
             <button>Join Waitlist</button>
           </label>
