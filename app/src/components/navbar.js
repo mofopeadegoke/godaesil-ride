@@ -3,13 +3,16 @@ import burger from "../assets/burger.svg";
 import Button from "./button.js";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import React from "react";
 // Function that handles the responsive navbar hamburger
 function navBurger() {
   const navHideEls = document.querySelector(".navbarSecondPart");
   navHideEls.classList.toggle("hide");
   console.log(navHideEls);
 }
-export default function Navbar() {
+
+
+const Navbar = React.memo(() => {
   return (
     <>
       <nav>
@@ -60,4 +63,6 @@ export default function Navbar() {
       </article>
     </>
   );
-}
+})
+
+export default Navbar;
