@@ -4,7 +4,7 @@ export default function TrackDelivery() {
     return (
         <>
           <section className="trackDeliverySection">
-            <img src={trackDeliveryIcon} alt="An Iphone with the Godeasil app showing on its screen" />
+            <img src={trackDeliveryIcon} alt="An Iphone with the Godeasil app showing on its screen" loading="lazy"/>
             <article className="text">
               <p className="title">Track Deliveries in Real-time</p>
               <p>

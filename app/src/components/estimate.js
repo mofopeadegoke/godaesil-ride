@@ -7,6 +7,7 @@ export default function GetEstimate() {
         <img
           src={getEstimateImg}
           alt="An Iphone showing the Godeasil app on the screen with the user viewing details of a package"
+          loading="lazy"
         />
         <article className="text">
           <p className="title">Get Estimate </p>

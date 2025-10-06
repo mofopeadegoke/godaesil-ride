@@ -7,6 +7,7 @@ export default function TrustedDelivery() {
             <img
               src={trustedDeliveryImg}
               alt="An Iphone with the Godeasil app showing on the screen and the user about to give a courier a rating"
+              loading="lazy"
             />
             <article className="text">
               <p className="title">Trusted Delivery Services</p>
