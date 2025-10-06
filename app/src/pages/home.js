@@ -1,8 +1,6 @@
 import "./reset.css";
 import "./home.css";
 import "./responsive.css";
-import introImgOne from "../assets/introImg1.png";
-import introImgTwo from "../assets/introImg2.png";
 import cashIcon from "../assets/cash_icon.png";
 import messageIcon from "../assets/message_icon.png";
 import packageIcon from "../assets/package_icon.png";
@@ -13,49 +11,10 @@ import getEstimateImg from "../assets/get_estimate.png";
 import inAppMessageImg from "../assets/inApp_message.png";
 import trustedDeliveryImg from "../assets/trusted_delivery.png";
 import Navbar from "../components/navbar";
-import Button from "../components/button";
 import Card from "../components/card";
 import { useEffect } from "react";
+import IntroSection from "../components/intro";
 
-function IntroSection() {
-  return (
-    <>
-      <section className="introSection" id="about">
-        <article className="text">
-          <h1>Delivery made Easier, Better and Faster</h1>
-          <p>
-            We pride ourselves on delivering excellence every mile. With our
-            intuitive app, managing shipments and tracking deliveries.
-          </p>
-          <a href="#contact">
-            <Button value="Book Demo" />
-          </a>
-          <a href="#contact">
-            <Button value="Join Waitlist" />
-          </a>
-        </article>
-        <article className="images">
-          <img
-            src={introImgOne}
-            alt="An Iphone 14 on a user's dashboard of the Godaesil-ride app"
-          />
-          <img
-            src={introImgTwo}
-            alt="The Godaesil-ride's logo on a yellow rectangular background"
-          />
-        </article>
-      </section>
-      <marquee direction="right">
-        Coming Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon
-        &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming
-        Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon &nbsp;&nbsp;&nbsp;&nbsp;
-        Coming Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon
-        &nbsp;&nbsp;&nbsp;&nbsp; Coming Soon &nbsp;&nbsp;&nbsp;&nbsp; Coming
-        Soon
-      </marquee>
-    </>
-  );
-}
 
 function FeaturesSection() {
   return (
