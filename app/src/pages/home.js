@@ -39,13 +39,15 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <IntroSection />
-      <FeaturesSection />
-      <TrackDelivery />
-      <TrustedDelivery />
-      <InAppMessage />
-      <GetEstimate />
-      <ContactSection />
+      <main>
+        <IntroSection />
+        <FeaturesSection />
+        <TrackDelivery />
+        <TrustedDelivery />
+        <InAppMessage />
+        <GetEstimate />
+        <ContactSection />
+      </main>
       <Footer />
     </>
   );
