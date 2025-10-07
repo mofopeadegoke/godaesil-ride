@@ -4,6 +4,9 @@
     box-sizing: border-box;
     line-height: 1.5;
 }
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --primary-orange: #FFA500;
     --secondary-orange: #A86D00;
@@ -209,7 +212,7 @@ marquee {
 .orangeTxt {
     color: var(--primary-orange);
 }
-.contact label span {
+.contact label{
     display: block;
     margin-bottom: 0.5rem;
 }

@@ -14,27 +14,6 @@ import Footer from "../components/footer";
 
 
 export default function Home() {
-  // Smooth scrolling function
-  const smoothScrollTo = (target) => {
-    const element = document.querySelector(target);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  useEffect(() => {
-    // Add event listeners to the navigation links
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = anchor.getAttribute("href");
-        smoothScrollTo(targetId);
-      });
-    });
-  }, []);
 
   return (
     <>

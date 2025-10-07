@@ -7,17 +7,20 @@ export default function ContactSection() {
           We'll send you an update notification for you to know we are now live
         </p>
         <form action="https://formspree.io/f/mdordzvg" method="POST">
-          <label>
-            <span>Email*</span>
+          <label htmlFor="emailInput">
+            Email*
+          </label>
             <input
               type="email"
               placeholder="eg email@example.com"
               name="Email"
               required
               aria-label="Input element where users of the website put in their email to join the waitlist for the Godeasil app"
+              id="emailInput"
+              autoComplete="email"
             />
             <button>Join Waitlist</button>
-          </label>
+          
         </form>
       </section>
     </>
